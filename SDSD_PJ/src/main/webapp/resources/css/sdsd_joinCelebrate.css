@@ -1,0 +1,147 @@
+/*
+==============================================
+회원가입 축하 페이지 CSS StyleSheet
+==============================================
+*/
+
+.joincb .first_tool, .second_tool {
+    font-family: sans-serif
+}
+
+.joincb {
+    
+    background-color: #CAE5FC;
+}
+
+.joincb .second_tool {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.joincb .second_tool .row {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.joincb .second_tool .iconBox {
+    text-align: right;
+}
+.joincb .second_tool .iconBox img {
+    width: 150px;
+}
+
+.joincb .second_tool .textBox p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2;
+    margin-bottom: 0;
+    padding-top: 5%;
+    margin-top: 20px;
+   	text-align: start;
+}
+
+.joincb .second_tool .textBox p span img {
+    width: 30px;
+    transform: translateY(-10%);
+}
+
+.joincb .st_textBox > div{
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.joincb .st_textBox {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.joincb .stt_1 {
+    top: 20px;
+    left: -100px;
+}
+
+.joincb .stt_1 span {
+    font-size: 2.3em;
+    font-weight: bold;
+    color: rgba(15, 101, 214, 0.925);
+}
+
+.joincb .stt_2 {
+    left: 150px;
+}
+
+.joincb .stt_2 span {
+    font-size: 2.3em;
+    font-weight: bold;
+    color: rgba(23, 194, 165, 0.925);
+}
+
+.joincb .stt_3 {
+    left: -150px;
+}
+
+.joincb .stt_3 span {
+    font-size: 2.3em;
+    font-weight: bold;
+    color: rgba(16, 199, 98, 0.925);
+}
+
+.joincb .stt_icon {
+    top: -100px;
+}
+
+.joincb .stt_icon > img {
+    top: -200px;
+    width: 10rem;
+}
+
+.joincb .stt_4 {
+    top: -100px;
+    left: 150px;
+}
+
+.joincb .stt_5 {
+    top: -70px;
+}
+
+.joincb .buttonContainer {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.joincb .buttonContainer p {
+    font-size: 1.5rem;
+    font-size: 500;
+}
+
+
+.joincb .buttonContainer .buttonBox button{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background-color: rgb(50, 157, 245);
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(50, 157, 245);
+    -webkit-apperance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 30px;
+}
+
+.joincb .buttonContainer .buttonBox button.gotoMain {
+    margin-right: 10px;
+}
+
+.joincb .buttonContainer .buttonBox button:hover {
+    color: rgb(50, 157, 245);
+    background-color: #ffffff;
+}

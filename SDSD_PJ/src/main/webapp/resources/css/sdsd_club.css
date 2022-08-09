@@ -1,0 +1,1396 @@
+@charset "UTF-8";
+/*
+==============================================
+플로깅 모임 관련 CSS StyleSheet
+==============================================
+*/
+.findClub_section {
+}
+
+
+.first_tool {
+    background-color:  rgba(88, 170, 236, 0.362);
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.mt_first, .ht_search, .ht_keyword{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.titleTextBox h2 img {
+    width: 40px;
+    transform: translate(-10px, -5px);
+}
+
+.titleTextBox h2 {
+    /* position: relative;
+    bottom: -6px; */
+    font-size: 1.8em;
+    text-decoration: none !important;
+}
+
+.sub_text {
+    font-size: 0.8em;
+    margin-top: -5px;
+}
+
+.ht_search input {
+    margin-right: -15px;
+    width: 500px;
+    height: 30px;
+    border: 1px solid rgb(74, 165, 240);
+    border-radius: 8px;
+}
+
+.ht_search button {
+    width: 50px;
+    height: 30px;
+    border: 1px solid rgb(74, 165, 240);
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgb(74, 165, 240);
+    position: relative;
+
+}
+
+.ht_search button img{
+    width: 20px;
+}
+
+.ht_keyword {
+    margin: 10px;
+}
+
+.ht_keyword > div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ht_keyword p, .stl_1 p {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(104, 103, 103);
+}
+
+.ht_keyword p {
+    transform: translateY(7px);
+}
+
+.ht_hash {
+    background-color: white;
+    border-radius: 10px;
+    width: 80px;
+    height: 25px;
+}
+
+.ht_hash a {
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+    color: rgb(50, 157, 245);
+}
+
+
+.findClub_section .buttonBox button {
+	text-decoration: none;
+    color: #ffffff;
+    font-size : 16px;
+    background-color: rgb(50, 157, 245);
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(50, 157, 245);
+    -webkit-apperance : none;
+    -moz-appearance: none;
+    appearance : none;
+}
+
+.findClub_section .buttonBox button#viewJoinedClub {
+	padding: 10px 30px !important;
+    margin-left: 10px;
+}
+
+.findClub_section .buttonBox button:hover{
+    color: rgb(50, 157, 245);
+    background-color: #ffffff;
+    border: 1px solid rgb(50, 157, 245);
+}
+
+
+
+
+/* 
+============================================
+모임 검색 및 리스트 페이지 CSS
+============================================
+ */
+
+.contentWrap {
+    padding: 50px 0;
+}
+.contentBody{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2.8rem;
+    width: 1000px;
+    /* height: 350px; */
+    text-align: center;
+    padding: 0 0 30px 0;
+    margin: 0 auto;
+}
+
+
+.contentBody .contentBox {
+    width: 32%;
+    /* margin-top: 1.2rem; */
+    position: relative;
+}
+
+/* 이미지 박스 */
+.contentBody .contentBox .imgBox {
+    line-height: 0;
+    cursor: pointer;
+}
+
+.contentBody .contentBox .imgBox img {
+    width: 100%;
+}
+
+.contentBody .contentBox .textBox {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: rgb(74, 165, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBody .contentBox .textBox h3.mainText {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+    padding: 0;
+}
+
+/* 이미지에 호버기능 */
+.imgBox > img:hover {
+    width: auto;
+}
+
+.imgBox{
+    position: relative;
+    display:inline-block;
+}
+
+.imgBox img{
+    max-width: 100%;
+}
+
+.imgBox div.hoverBox{
+	z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: none;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.imgBox div.hoverBox p {
+    line-height: 1.5;
+    color: #fff;
+}
+
+.imgBox div.hoverBox a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(67, 145, 208);
+    border-radius: 10px;
+    cursor: pointer !important;
+}
+
+.imgBox div.hoverBox a:hover {
+    background-color: #ffffff;
+    color: rgb(67, 145, 208);
+}
+
+.imgBox::before, .imgBox::after{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:100%;
+    height:100%;
+    transform:translate(-50%,-50%);
+    transition:all .6s;
+}
+
+.imgBox::before{
+    /* background: #3B78F0; */
+    background-color: rgb(74, 165, 240);
+    opacity: .7;
+    filter: alpha(opacity=50);
+    width:0;
+}
+
+.imgBox::after{
+}
+
+.imgBox:hover div.hoverBox{
+    display: inline-block;
+}
+
+.imgBox:hover::before{
+    width:100%;
+}
+
+.imgBox:hover::after{
+    height:100%;
+}
+
+.contentBody .contentBox .iconBox {
+    text-align: left;
+}
+.contentBody .contentBox .iconBox span {
+    padding-left: 5px;
+}
+
+
+/*
+================================================
+모임 상세보기 페이지 CSS StyleSheet
+================================================
+*/
+
+.viewClub_section {
+    margin: 0 auto;
+}
+
+.viewClub_section .titleBox {
+    background-color: #CAE5FC;
+    padding: 60px 0;
+    border-bottom: none !important;
+}
+
+.viewClub_section .titleBox h2 {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.viewClub_section .clubInfo_container {
+    width: 70%;
+    margin: 60px auto;
+}
+
+.viewClub_section .clubInfo_container .carousel .carousel-indicators [data-bs-target] {
+    background-color: #82c2fa;
+}
+
+.viewClub_section .clubInfo_container .clubInfoBox {}
+
+.viewClub_section .clubInfo_container .clubInfoBox .titleText {
+    margin-bottom: 10px;
+}
+
+.viewClub_section .clubInfo_container .clubInfoBox .titleText p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.viewClub_section .clubInfo_container .clubInfoBox .titleText p a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+.viewClub_section .clubInfo_container .clubInfoBox .titleText p a.pressLike {
+    color: tomato;
+}
+
+.viewClub_section .clubInfo_container .clubInfoBox .keywordText {
+    margin-bottom: 10px;
+}
+
+.viewClub_section .clubInfo_container .clubInfoBox .keywordText a {
+    background-color: white ;
+    border-radius: 10px;
+    border: 1px solid rgb(88, 170, 236);
+    padding: 5px 10px;
+    text-decoration: none;
+    color: rgb(88, 170, 236);
+    font-size: 0.8em;
+}
+
+.viewClub_section .clubInfo_container .clubInfoBox span.keyword {
+    background-color: white ;
+    border-radius: 10px;
+    border: 1px solid rgb(88, 170, 236);
+    padding: 5px 10px;
+    text-decoration: none;
+    color: rgb(88, 170, 236);
+    font-size: 0.8em;
+}
+
+.viewClub_section .clubInfo_container .clubInfoBox .clubInfoList {
+}
+
+.viewClub_section .clubInfo_container .clubInfoBox .clubInfoList ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.viewClub_section .clubInfo_container .clubInfoBox .clubInfoList ul li {
+
+}
+
+.viewClub_section .clubInfo_container .clubInfoBox .clubInfoList ul li span {
+    font-weight: 600;
+}
+
+.viewClub_section .clubInfo_container .buttonBox {
+    margin-bottom: 5px;
+}
+
+.viewClub_section .clubInfo_container .buttonBox button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: rgb(50, 157, 245);
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(50, 157, 245);
+    -webkit-apperance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.viewClub_section .clubInfo_container .buttonBox button:hover {
+    background-color: #ffffff;
+    color: rgb(50, 157, 245);
+}
+
+/* 모임 삭제 버튼 색깔 */
+.viewClub_section .clubInfo_container .buttonBox button.deleteBtn {
+    background-color: tomato;
+    border: 1px solid tomato;
+}
+
+.viewClub_section .clubInfo_container .buttonBox button.deleteBtn:hover {
+    background-color: #ffffff;
+    color: tomato;
+}
+
+/* 모임 상세 정보 (모임 일정 / 공지사항) */
+.viewClub_section .clubNotice_buttonBox {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(-38%);
+}
+
+.viewClub_section .clubNotice_buttonBox a {
+    text-decoration: none;
+    padding: 20px 50px;
+    background-color: #f6f6f6;
+    color: #1f1f1f;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 20px 20px 0 0;
+    
+}
+
+.viewClub_section .clubNotice_buttonBox a.active {
+    background-color: #CAE5FC;
+}
+
+.viewClub_section .clubInfo_Wrap {
+    background-color: #CAE5FC;
+}
+/* 달력 CSS */
+.viewClub_section .clubInfo_Wrap .clubNotice_infoBox_01 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewClub_section .clubNotice_infoBox_01 .calendar {
+    width: 600px;
+    margin: 50px;
+}
+
+.viewClub_section .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.viewClub_section .year-month {
+    font-size: 1.5rem;
+}
+
+.viewClub_section .nav {
+    display: flex;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+.viewClub_section .nav-btn {
+    width: 28px;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    line-height: 34px;
+    background-color: transparent;
+    cursor: pointer;
+}  
+
+.viewClub_section .go-today {
+    width: 75px;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+}
+
+.viewClub_section .days {
+    display: flex;
+    margin: 25px 0 10px;
+}
+
+.viewClub_section .day {
+    width: calc(100% / 7);
+    text-align: center;
+}
+
+.viewClub_section .dates {
+    display: flex;
+    flex-flow: row wrap;
+    height: 500px;
+    /* border-top: 1px solid #333333;
+    border-right: 1px solid #333333; */
+    background-color: #FFFFFF;
+}
+
+.viewClub_section .date {
+    width: calc(100% / 7);
+    padding: 15px;
+    text-align: right;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+}
+
+.viewClub_section.day:nth-child(7n + 1),
+.viewClub_section .date:nth-child(7n + 1) {
+    color: #D13E3E;
+}
+
+.viewClub_section.day:nth-child(7n),
+.viewClub_section .date:nth-child(7n) {
+    color: #396EE2;
+}
+
+.viewClub_section .other {
+    opacity: 0.3;
+}
+
+.viewClub_section .today {
+    position: relative;
+    color: rgb(50, 157, 245);
+    padding: 5px 10px;
+    background-color: rgb(50, 157, 245);
+    border: 1px solid rgb(50, 157, 245); 
+    /* border-radius: 50%; */
+    
+}
+
+.viewClub_section .today::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: #FF0000;
+    border-radius: 50%;
+    content: '';
+}
+
+.viewClub_section .clubNotice_infoBox_02 {
+    background-color: #CAE5FC;
+}
+
+.viewClub_section .clubNotice_infoBox_02 .scheduleInfo {
+    width: 600px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.viewClub_section .clubNotice_infoBox_02 .scheduleInfo .titleText {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.viewClub_section .clubNotice_infoBox_02 .scheduleInfo ol{
+
+}
+
+/* ======================================== */
+/* ======================================== */
+/* ======================================== */
+/* ======================================== */
+
+.viewClub_section .clubNotice_infoBox_03 {
+    background-color: #CAE5FC;
+    padding: 50px 0;
+}
+
+.viewClub_section .clubNotice_infoBox_03 .buttonBox {
+    width: 70%;
+    margin: 0 auto 10px auto;
+    text-align: left;
+}
+
+.viewClub_section .clubNotice_infoBox_03 .buttonBox button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: rgb(50, 157, 245);
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(50, 157, 245);
+    -webkit-apperance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.viewClub_section .clubNotice_infoBox_03 .buttonBox button:hover {
+    background-color: #ffffff;
+    color: rgba(50, 157, 245);
+}
+
+.viewClub_section .clubNotice_infoBox_03 .tableBox {
+    background-color: #ffffff;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.viewClub_section .clubNotice_infoBox_03 .tableBox tr:hover {
+    background-color: rgb(228, 243, 255);
+}
+.viewClub_section .clubNotice_infoBox_03 .page-link {
+    color: rgb(50, 157, 245);
+}
+
+
+/*
+================================================
+모임 생성하기 페이지 CSS StyleSheet
+================================================
+*/
+
+.createClub_section {
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.createClub_section .titleBox {
+    background-color: #CAE5FC;
+    padding: 60px 0;
+}
+
+.createClub_section .titleBox h2 {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.createClub_section .createForm_Wrap {
+    width: 70%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.createClub_section .createForm_Wrap .fileUploadBox {
+    text-align: center;
+    /* margin-top: 10px; */
+    margin-top: 30%;
+}
+
+.createClub_section .createForm_Wrap .fileUploadBox .fileboxBtn label {
+    display: inline-block;
+    padding: .5em 1.5em;
+    color: #ffffff;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: rgb(50, 157, 245);
+    cursor: pointer;
+    border: 1px solid rgb(50, 157, 245);
+    /* border-bottom-color: #e2e2e2; */
+    border-radius: .25em;
+}
+
+.createClub_section .createForm_Wrap .fileUploadBox .fileboxBtn label:hover {
+    background-color: #ffffff;
+    color: rgb(50, 157, 245);
+}
+
+/* 파일 필드 숨기기 */
+.createClub_section .createForm_Wrap .fileUploadBox .fileboxBtn input[type="file"] {  
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+}
+
+.createClub_section .createForm_Wrap .fileUploadBox .subText {
+    margin: 0 auto;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.createClub_section .createForm_Wrap .clubInfoForm label.col-form-label {
+    font-weight: 600;
+}
+
+.createClub_section .buttonBox{
+    text-align: center;
+    margin: 0 auto;
+}
+.createClub_section .buttonBox input.submitBtn {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background-color: rgb(50, 157, 245);
+    padding: 10px 60px;
+    border-radius: 10px;
+    border: 1px solid rgb(50, 157, 245);
+    -webkit-apperance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+.createClub_section .buttonBox input.submitBtn:hover {
+    color: rgb(50, 157, 245);
+    background-color: #ffffff;
+}
+
+.createClub_section .buttonBox input.resetBtn {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background-color: #a9a9a9;
+    padding: 10px 60px;
+    border-radius: 10px;
+    border: 1px solid #a9a9a9;
+    -webkit-apperance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+.createClub_section .buttonBox input.resetBtn:hover {
+    color: #1f1f1f;
+    background-color: #ffffff;
+}
+
+
+/*
+================================================
+모임 인증 페이지 CSS StyleSheet 
+================================================
+*/
+
+.clubPlogBoard_section{}
+
+.clubPlogBoard_section .buttonBox{
+	/* padding-bottom: 30px; */
+}
+
+.clubPlogBoard_section .buttonBox .boardBtn {
+    text-align: center;
+}
+
+.clubPlogBoard_section .buttonBox .boardBtn button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size : 16px;
+    background-color: rgb(50, 157, 245);
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(50, 157, 245);
+    -webkit-apperance : none;
+    -moz-appearance: none;
+    appearance : none;
+}
+
+.clubPlogBoard_section .buttonBox .boardBtn button:hover {
+    background-color: #ffffff;
+    color: rgb(50, 157, 245);
+}
+
+.clubPlogBoard_section .buttonBox .indiBoard {}
+.clubPlogBoard_section .buttonBox .indiBoard p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    text-align: center;
+    color: cornflowerblue;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.clubPlogBoard_section .plogBoard_Container {
+    overflow: hidden;
+}
+
+.clubPlogBoard_section .plogBoard_Container .col-md-3 {
+    /* height: 25%; */
+    padding: 0 !important;
+}
+
+.clubPlogBoard_section .plogBoard_Container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* 이미지에 호버기능 */
+.clubPlogBoard_section .plogBoard_Container .boardImgBox > img:hover {
+    width: auto;
+}
+
+.clubPlogBoard_section .plogBoard_Container .boardImgBox{
+    position: relative;
+    display:inline-block;
+}
+
+.clubPlogBoard_section .plogBoard_Container .boardImgBox img{
+    max-width: 100%;
+}
+
+.clubPlogBoard_section .plogBoard_Container .boardImgBox div.hoverBox{
+	z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: none;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.clubPlogBoard_section .plogBoard_Container .boardImgBox div.hoverBox p {
+    line-height: 1.5;
+    color: #fff;
+}
+
+.clubPlogBoard_section .plogBoard_Container .boardImgBox div.hoverBox a {
+    color: rgb(102, 99, 99);
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer !important;
+    font-weight: bold;
+}
+
+.clubPlogBoard_section .plogBoard_Container .boardImgBox div.hoverBox a:hover {
+    background-color: #ffffff;
+    color: rgb(67, 145, 208);
+}
+
+.clubPlogBoard_section .plogBoard_Container .boardImgBox::before, .clubPlogBoard_section .plogBoard_Container .boardImgBox::after{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:100%;
+    height:100%;
+    transform:translate(-50%,-50%);
+    transition:all .6s;
+}
+.clubPlogBoard_section .plogBoard_Container .boardImgBox::before{
+    /* background: #3B78F0; */
+    background-color: rgb(190, 201, 212);
+    opacity: .7;
+    filter: alpha(opacity=50);
+    width:0;
+}
+
+
+.clubPlogBoard_section .plogBoard_Container .boardImgBox:hover div.hoverBox{
+    display: inline-block;
+}
+
+.clubPlogBoard_section .plogBoard_Container .boardImgBox:hover::before{
+    width:100%;
+}
+
+.clubPlogBoard_section .plogBoard_Container .boardImgBox:hover::after{
+    height:100%;
+}
+
+.clubPlogBoard_section .plogBoard_Container .boardImgBox div.hoverBox .hb_lc {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.clubPlogBoard_section .plogBoard_Container .boardImgBox div.hoverBox .hb_lc .hb_like,
+.clubPlogBoard_section .plogBoard_Container .boardImgBox div.hoverBox .hb_lc .hb_coment {
+    padding: 0 0 5px 5px;
+    /* transform: translateY(-5px); */
+}
+
+.clubPlogBoard_section .plogBoard_Container .boardImgBox div.hoverBox .hb_lc .bi-chat {
+    /* transform: translateY(-1.5px); */
+    margin-left: 8px;
+}
+
+
+/*
+================================================
+모임 공지 등록 페이지 CSS StyleSheet 
+================================================
+*/
+
+.uploadClubNotice_section {
+    margin: 0 auto;
+}
+
+.uploadClubNotice_section .titleBox {
+    background-color: #CAE5FC;
+    padding: 60px 0;
+}
+
+.uploadClubNotice_section .titleBox h2 {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.uploadClubNotice_section .formContainer {
+    padding: 60px 0;
+}
+.uploadClubNotice_section .formContainer .formWrap {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.uploadClubNotice_section .formContainer .formWrap .noticeLabel {
+    text-align: right;
+}
+
+.uploadClubNotice_section .formContainer .buttonBox{
+    text-align: center;
+    margin: 0 auto;
+}
+.uploadClubNotice_section .formContainer .buttonBox input.submitBtn {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background-color: rgb(50, 157, 245);
+    padding: 10px 60px;
+    border-radius: 10px;
+    border: 1px solid rgb(50, 157, 245);
+    -webkit-apperance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+.uploadClubNotice_section .formContainer .buttonBox input.submitBtn:hover {
+    color: rgb(50, 157, 245);
+    background-color: #ffffff;
+}
+
+.uploadClubNotice_section .formContainer .buttonBox input.resetBtn {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background-color: #a9a9a9;
+    padding: 10px 60px;
+    border-radius: 10px;
+    border: 1px solid #a9a9a9;
+    -webkit-apperance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+.uploadClubNotice_section .formContainer .buttonBox input.resetBtn:hover {
+    color: #1f1f1f;
+    background-color: #ffffff;
+}
+
+/*
+================================================
+모임 인증 상세보기 페이지 CSS StyleSheet
+================================================
+*/
+
+.clubPlogBoardDetail_section {
+    margin: 0 auto;
+}
+
+.clubPlogBoardDetail_section .titleBox {
+    background-color: #CAE5FC;
+    padding: 60px 0;
+}
+
+.clubPlogBoardDetail_section .titleBox h2 {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.clubPlogBoardDetail_section .titleBox h2 img {
+    width: 40px;
+    transform: translate(-10px, -5px);
+}
+
+
+.clubPlogBoardDetail_section .plogBoardWrap{
+    padding: 60px 0;
+}
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .col.nameCol {
+    padding: 0;
+    border-left: 1px solid darkgray;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .nameContainer {
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 10px;
+}
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .nameContainer .profileImgBox,
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .commentWrap .profileImgBox {
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    overflow: hidden;
+    margin: 0px 20px 0px 20px;
+    float: left;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .nameContainer .profileImgBox img,
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .commentWrap .profileImgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .textWrap {
+    padding: 10px 0 10px 20px;
+    /* border-bottom: 1px solid darkgray; */
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .textWrap p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .textWrap span.keyword {
+    font-size: 0.9rem;
+    color: rgb(50, 157, 245);
+    font-weight: 500;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .textWrap span.clubName {
+    font-size: 0.9rem;
+    color: #1f1f1f;
+    font-weight: 500;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .commentWrap {
+    padding: 10px 0 20px 0;
+    /* border-bottom: 1px solid darkgray; */
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .commentWrap .commentBox p {
+    margin: 5px 0 0 0;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .commentWrap .commentBox p .commentName {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .commentWrap .commentBox button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: gray;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    -webkit-apperance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .commentWrap .commentBox button:hover {
+	color: #ffffff;
+	border: 1px solid tomato;
+	background-color: tomato;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .commentWrap .commentBox p .commentLike {}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .iconContainer {
+    margin-bottom: 10px;
+    padding: 10px 0 10px 20px;
+    border-top: 1px solid darkgray;
+   	border-bottom: 1px solid darkgray;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .iconContainer .iconBox {
+    font-size: 1.2rem;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .iconContainer .textBox {
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .iconContainer .textBox p {
+    margin-bottom: 0;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .iconContainer .textBox .likeCount {
+    margin-right: 5px;
+}
+
+.clubPlogBoardDetail_section .plogBoardWrap .contentContainer .inputCommentWrap {
+    padding-left: 10px;
+}
+
+.clubPlogBoardDetail_section .plogBoardButtonWrap {
+    width: 70%;
+    margin: 0 auto;
+	padding-bottom: 60px;
+}
+
+.clubPlogBoardDetail_section .plogBoardButtonWrap button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: rgb(50, 157, 245);
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(50, 157, 245);
+    -webkit-apperance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.clubPlogBoardDetail_section .plogBoardButtonWrap button:hover {
+    color: rgb(50, 157, 245);
+    background: #ffffff;
+}
+
+.clubPlogBoardDetail_section .plogBoardButtonWrap button.delete:hover {
+    color: #ffffff;
+    border-color: tomato;
+    background: tomato;
+}
+
+.clubPlogBoardDetail_section .plogBoardButtonWrap .prevBtnBox {
+    
+}
+.clubPlogBoardDetail_section .plogBoardButtonWrap .boardBtnBox {
+    text-align: center;
+}
+.clubPlogBoardDetail_section .plogBoardButtonWrap .nextBtnBox {
+    text-align: right;
+}
+
+/*
+================================================
+모임 인증 등록 페이지 CSS StyleSheet
+================================================
+*/
+.clubPlogBoardWrite_section {
+    margin: 0 auto;
+}
+
+.clubPlogBoardWrite_section .titleBox {
+    background-color: #CAE5FC;
+    padding: 60px 0;
+}
+
+.clubPlogBoardWrite_section .titleBox h2 {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.clubPlogBoardWrite_section .titleBox h2 img {
+    width: 40px;
+    transform: translate(-10px, -5px);
+}
+
+.clubPlogBoardWrite_section .plogBoardWrap {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.clubPlogBoardWrite_section .plogBoardWrap .fileboxBtn {
+    /* margin-top: 10px; */
+    margin-top: 30%;
+    /* top: 50%;
+    width: 50%;
+    position: absolute; */
+}
+
+.clubPlogBoardWrite_section .plogBoardWrap .fileboxBtn label {
+    display: inline-block;
+    padding: .5em 1.5em;
+    color: #ffffff;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: rgb(50, 157, 245);
+    cursor: pointer;
+    border: 1px solid rgb(50, 157, 245);
+    /* border-bottom-color: #e2e2e2; */
+    border-radius: .25em;
+}
+
+.clubPlogBoardWrite_section .plogBoardWrap .fileboxBtn label:hover {
+    background-color: #ffffff;
+    color: rgb(50, 157, 245);
+}
+
+/* 파일 필드 숨기기 */
+.clubPlogBoardWrite_section .plogBoardWrap .fileboxBtn input[type="file"] {  
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+}
+
+.clubPlogBoardWrite_section .plogBoardWrap .subText {
+    margin: 0 auto;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.clubPlogBoardWrite_section .plogBoardWrap{
+    padding: 60px 0;
+}
+.clubPlogBoardWrite_section .plogBoardWrap .contentContainer {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.clubPlogBoardWrite_section .plogBoardWrap .contentContainer .col.nameCol {
+    padding: 0;
+    border-left: 1px solid darkgray;
+}
+
+.clubPlogBoardWrite_section .plogBoardWrap .contentContainer .nameContainer {
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 10px;
+}
+.clubPlogBoardWrite_section .plogBoardWrap .contentContainer .nameContainer .profileImgBox,
+.clubPlogBoardWrite_section .plogBoardWrap .contentContainer .commentWrap .profileImgBox {
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    overflow: hidden;
+    margin: 0px 20px 0px 20px;
+    float: left;
+}
+
+.clubPlogBoardWrite_section .plogBoardWrap .contentContainer .nameContainer .profileImgBox img,
+.clubPlogBoardWrite_section .plogBoardWrap .contentContainer .commentWrap .profileImgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clubPlogBoardWrite_section .plogBoardWrap .contentContainer .textWrap {
+    padding: 10px 0 10px 20px;
+    /* border-bottom: 1px solid darkgray; */
+}
+
+.clubPlogBoardWrite_section .plogBoardWrap .contentContainer .textWrap p {
+    text-align: right;
+    font-size: 0.9rem;
+    color: rgb(50, 157, 245);
+    font-weight: 600;
+    padding: 5px 10px 0 0;
+    margin-bottom: 0;
+}
+
+/* 보더라인 삭제 및 게시글 태그 정렬 (서호정) */
+.clubPlogBoardWrite_section .plogBoardWrap .contentContainer .textWrap .bbbp2_keyword {
+	display: flex;
+	align-items: center;
+}
+
+.clubPlogBoardWrite_section .plogBoardWrap .contentContainer .textWrap .bbbp2_keyword input {
+	margin: 0;
+}
+
+.clubPlogBoardWrite_section .extraWrap .inputBox {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.clubPlogBoardWrite_section .extraWrap .inputBox div {
+    margin-right: 10px;
+}
+
+.clubPlogBoardWrite_section .extraWrap .inputBox label {
+    margin-right: 20px;
+    margin-left: 8px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.clubPlogBoardWrite_section .extraWrap .inputBox #plogBoardColorPick {
+    margin-right: 30px;
+}
+
+
+.clubPlogBoardWrite_section .plogBoardButtonWrap {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0 60px 0;
+}
+
+.clubPlogBoardWrite_section .plogBoardButtonWrap button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: rgb(50, 157, 245);
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(50, 157, 245);
+    -webkit-apperance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.clubPlogBoardWrite_section .plogBoardButtonWrap button:hover {
+    color: rgb(50, 157, 245);
+    background: #ffffff;
+}
+.clubPlogBoardWrite_section .plogBoardButtonWrap .boardBtnBox {
+    text-align: center;
+}
+
+/*
+================================================
+모임 생성 완료 페이지 CSS StyleSheet
+================================================
+*/
+.createClubThxU_section {
+    padding: 150px 0;
+    background-color: #CAE5FC;
+}
+
+.createClubThxU_section .mainTextContainer {
+    width: 70%;
+    margin: 0 auto 40px auto;
+}
+
+.createClubThxU_section .mainTextContainer .iconBox {
+    text-align: right;
+}
+.createClubThxU_section .mainTextContainer .iconBox img {
+    width: 150px;
+}
+
+.createClubThxU_section .mainTextContainer .textBox p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2;
+    margin-bottom: 0;
+    padding-top: 5%;
+}
+
+.createClubThxU_section .mainTextContainer .textBox p span img {
+    width: 30px;
+    transform: translateY(-10%);
+}
+
+.createClubThxU_section .buttonContainer {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.createClubThxU_section .buttonContainer p {
+    font-size: 1.5rem;
+    font-size: 500;
+}
+
+.createClubThxU_section .buttonContainer .buttonBox button{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background-color: rgb(50, 157, 245);
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(50, 157, 245);
+    -webkit-apperance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.createClubThxU_section .buttonContainer .buttonBox button.gotoMain {
+    margin-right: 10px;
+}
+
+.createClubThxU_section .buttonContainer .buttonBox button:hover {
+    color: rgb(50, 157, 245);
+    background-color: #ffffff;
+}

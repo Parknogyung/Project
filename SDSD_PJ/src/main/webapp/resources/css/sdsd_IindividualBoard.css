@@ -1,0 +1,633 @@
+@charset "UTF-8";
+/*
+개인 플로깅 인증 게시판
+*/
+
+.ploggingPerson {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.ploggingPerson .titleBox {
+    margin: 0 auto;
+    padding: 100px 0 20px 0;
+    background-color: rgba(88, 170, 236, 0.362);
+}
+
+
+.ploggingPerson .titleBox h2 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding-bottom: 50px;
+}
+
+.ploggingPerson .menuBox {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.ploggingPerson .menuBox .menuList{
+    width: 20%;
+    display: inline-block;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.ploggingPerson .menuBox .menuList a {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-size: 1rem;
+
+}
+
+.ploggingPerson .menuBox .menuList span img {
+    width: 25px;
+    height: 25px;
+    transform: translate(-5px, -10%);
+}
+
+/* contentBox */
+
+.contentBox {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    font-family: sans-serif
+}
+
+
+.ht_search2, .ht_keyword2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.ht_search2 input {
+    margin-right: -15px;
+    width: 500px;
+    height: 30px;
+    border: 1px solid rgb(74, 165, 240);
+    border-radius: 8px;
+}
+
+.ht_search2 .ht_22 button {
+    width: 50px;
+    height: 30px;
+    border: 1px solid rgb(74, 165, 240);
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgb(74, 165, 240);
+    position: relative;
+    /*transform: translateY(-1px);*/
+}
+
+.ht_search2 button img{
+    width: 20px;
+}
+
+.ht_keyword2 {
+    margin: 10px;
+}
+
+.ht_keyword2 p {
+	transform: translateY(7px);
+}
+
+.ht_keyword2 > div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ht_keyword2 p {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(104, 103, 103);
+}
+
+.ht_hash2 {
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    width: 80px;
+    height: 25px;
+}
+
+.ht_hash2 a {
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+    color: rgb(50, 157, 245);
+}
+
+.btns {
+    display: flex;
+    margin-top: 20px;
+}
+
+.btns > div {
+    width: 33%;
+}
+
+.col1 {
+    margin: 0 auto;
+}
+
+.btns button {
+    background-color: rgb(74, 165, 240); ;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+.btns button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+}
+
+.col2 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: small;
+}
+
+.col2 img {
+    width: 20px;
+}
+
+/* picture */
+
+.ploggingPerson .buttonBox{
+	padding-bottom: 30px;
+}
+
+.ploggingPerson .buttonBox .boardBtn {
+    text-align: center;
+}
+
+.ploggingPerson .buttonBox .boardBtn button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size : 16px;
+    background-color: rgb(50, 157, 245);
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(50, 157, 245);
+    -webkit-apperance : none;
+    -moz-appearance: none;
+    appearance : none;
+}
+
+.ploggingPerson .buttonBox .boardBtn button:hover {
+    background-color: #ffffff;
+    color: rgb(50, 157, 245);
+}
+
+.ploggingPerson_section .buttonBox .indiBoard p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    text-align: center;
+    color: cornflowerblue;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ploggingPerson .plogBoard_Container {
+    overflow: hidden;
+}
+
+.ploggingPerson .plogBoard_Container .col-md-3 {
+    /* height: 25%; */
+    padding: 0 !important;
+}
+
+.ploggingPerson .plogBoard_Container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* 이미지에 호버기능 */
+.ploggingPerson .plogBoard_Container .boardImgBox > img:hover {
+    width: auto;
+}
+
+.ploggingPerson .plogBoard_Container .boardImgBox{
+    position: relative;
+    display: inline-block;
+}
+
+.ploggingPerson .plogBoard_Container .boardImgBox img{
+    max-width: 100%;
+}
+
+.ploggingPerson .plogBoard_Container .boardImgBox div.hoverBox{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: none;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.ploggingPerson .plogBoard_Container .boardImgBox div.hoverBox p {
+    line-height: 1.5;
+    color: #fff;
+}
+
+.ploggingPerson .plogBoard_Container .boardImgBox div.hoverBox a {
+    color: rgb(102, 99, 99);
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer !important;
+    font-weight: bold;
+}
+
+.ploggingPerson .plogBoard_Container .boardImgBox div.hoverBox a:hover {
+    background-color: #ffffff;
+    color: rgb(67, 145, 208);
+}
+
+.ploggingPerson .plogBoard_Container .boardImgBox::before, .clubPlogBoard_section .plogBoard_Container .boardImgBox::after{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:100%;
+    height:100%;
+    transform:translate(-50%,-50%);
+    transition:all .6s;
+}
+.ploggingPerson .plogBoard_Container .boardImgBox::before{
+    /* background: #3B78F0; */
+    background-color: rgb(190, 201, 212);
+    opacity: .7;
+    filter: alpha(opacity=50);
+    width:0;
+}
+
+
+.ploggingPerson .plogBoard_Container .boardImgBox:hover div.hoverBox{
+    display: inline-block;
+}
+
+.ploggingPerson .plogBoard_Container .boardImgBox:hover::before{
+    width:100%;
+}
+
+.ploggingPerson .plogBoard_Container .boardImgBox:hover::after{
+    height:100%;
+}
+
+.ploggingPerson .plogBoard_Container .boardImgBox div.hoverBox .hb_lc {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.ploggingPerson .plogBoard_Container .boardImgBox div.hoverBox .hb_lc .hb_like,
+.ploggingPerson .plogBoard_Container .boardImgBox div.hoverBox .hb_lc .hb_coment {
+    padding: 0 0 5px 5px;
+    transform: translateY(-5px);
+}
+
+.ploggingPerson .plogBoard_Container .boardImgBox div.hoverBox .hb_lc .bi-chat {
+    transform: translateY(-1.5px);
+    margin-left: 8px;
+}
+
+
+/*
+개인플로깅 인증 게시판 상세보기 css
+*/
+
+.boardBox, .bbb_1, .bbb_comentBox {
+    display: flex;
+}
+
+
+.bbb_1, .bbb_2, .bbb_3, .bbb_4 {
+    border-bottom: 1px solid silver;
+    align-items: center;
+}
+
+.bb_imgs, .bb_board {
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    height: 50%;
+}
+
+.bb_imgs {
+    margin-left: 70px;
+}
+.bb_board {
+    margin-right: 70px;
+}
+
+.bbb_1_profile_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    overflow: hidden;
+    margin: 0px 20px 0px 20px;
+}
+
+.bbb_1_profile_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bbb_1 p, .bbb_3 p {
+    font-size: small;
+    font-weight: bold;
+}
+
+.bbb_textBox {
+    text-align: start;
+    font-size: small;
+    font-weight: bold;
+    margin: 10px 20px 10px 20px;
+}
+
+.bbb_textBox span {
+    color: rgb(50, 157, 245);
+}
+
+.bbb_comentBox {
+    width: 100%;
+    text-align: start;
+    align-items: center;
+    font-size: small;
+    font-weight: bold;
+    margin: 10px 0px 10px 0px;
+}
+
+.bbb_Nickname {
+    width: 10%;
+}
+
+.bbb_coment {
+    width: 70%;
+    margin-left: 30px;
+}
+
+.bbb_cbtn {
+    background-color: white;
+    border: none;
+    font-size: small;
+    font-weight: bold;
+    color: slategray;
+}
+
+.bbb4_icon, .bbb4_liketime {
+    display: flex;
+}
+
+.bbb4_icon svg {
+    margin: 10px;
+}
+
+.bbb4_liketime {
+    text-align: start;
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: -10px;
+    margin-left: 10px;
+}
+
+.bbb4_time {
+    padding-left: 20px;
+    color: slategray;
+}
+
+.bbb5_input {
+    display: flex;
+    border: none;
+    align-items: center;
+    margin-top: 5px;
+    text-align: center;
+    width: 99%;
+    margin-left: 1%;
+}
+
+.bbb5_input .mb-3 {
+	width: 100%;
+	display: flex;
+}
+
+.bbb5_input svg {
+    width: 10%;
+    transform: translateY(-7px);
+}
+
+.bbb5_input>div>form>input {
+    margin-right: -15px;
+    width: 90%;
+    height: 40px;
+}
+
+.bbb5_input>div>button {
+    width: 10%;
+    height: 40px;
+    border: none;
+    background-color: white;
+    position: relative;
+    color: rgb(74, 165, 240);
+    font-weight: bold;
+    text-align: end;
+}
+
+.buttonBox_D {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.buttonBox_D div {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.buttonBox_D button {
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(101, 178, 241);
+    color: white;
+    font-weight: bold;
+}
+
+
+/*
+개인플로깅 인증 게시판 글 작성 css
+*/
+
+.boardBox_p, .bbbp_1, .bbbp2_input {
+    display: flex;
+}
+
+
+.bbbp_1, .bbbp_2 {
+    border-bottom: 1px solid silver;
+    align-items: center;
+}
+
+
+.bb_file, .bb_board_p {
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    height: 500px;
+}
+
+.bb_file {
+    position: relative;
+    width: 53.5%;
+}
+
+.bb_file div {
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bb_file p {
+    font-weight: bold;
+    color: rgb(124, 124, 124);
+}
+
+.bbf1 {
+    padding: 6px 25px; 
+    background-color: rgb(50, 157, 245);
+    border-radius: .25em;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bb_board_p {
+    margin-right: 70px;
+    border-left: 1px solid silver;
+}
+
+.bbbp_1_profile_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    overflow: hidden;
+    margin: 0px 20px 0px 20px;
+}
+
+.bbbp_1_profile_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bbbp_1 p, .bbbp_3 p {
+    font-size: small;
+    font-weight: bold;
+}
+
+.bbbp_textBox {
+    text-align: start;
+    font-size: small;
+    font-weight: bold;
+    margin: 10px 20px 10px 20px;
+    height: 80%;
+}
+
+.bbbp_textBox span {
+    color: rgb(50, 157, 245);
+}
+
+.mb-3 textarea {
+    height: 350px;
+    resize: none;
+}
+
+.bbbp2_input {
+    justify-content: space-between;
+    height: 15px;
+    margin-top: -10px;
+}
+
+.bbbp_Nickname {
+    width: 10%;
+}
+
+.bbbp2_keyword input {
+	border: none;
+	margin-top: 10px;
+}
+
+.bbbp3_input {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.bbbp3_input div {
+    margin-right: 10px;
+}
+
+.bbbp3_input label {
+    margin-right: 20px;
+    margin-left: 8px;
+    font-size: small;
+    font-weight: bold;
+}
+
+#exampleColorInput {
+    margin-right: 30px;
+}
+
+.buttonBox_p {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.buttonBox_p div {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buttonBox_p button {
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(41, 139, 219);
+    color: white;
+    font-weight: bold;
+}

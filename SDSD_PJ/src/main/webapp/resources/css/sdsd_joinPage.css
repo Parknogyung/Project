@@ -1,0 +1,474 @@
+@charset "UTF-8";
+
+/*
+폰트 적용에 따른 input:password 텍스트 깨짐 현상 해결
+*/
+input[type=password]{
+	font-family: sans-serif !important;
+}
+input[type=password]::placeholder {
+	font-family: 'twayair';
+}
+
+/*
+==============================================
+회원가입 페이지 관련 CSS StyleSheet
+==============================================
+*/
+.joinSelect {
+    text-align: center;
+    margin: 150px 0;
+}
+
+.joinSelect h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 4px;
+    margin: 0 auto 30px auto;
+}
+
+.joinSelect .joinBox_01 .btnBox_01 {
+    width: 50%;
+    margin: 0 auto;
+}
+.joinSelect .joinBox_01 .btnBox_01 .enrollBtn {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(185, 43, 39);
+    border: 1px solid rgb(185, 43, 39);
+    width: 350px;
+    height: 45px;
+    font-size: 17px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.joinSelect .joinBox_01 .btnBox_02 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.joinSelect .joinBox_01 .btnBox_02 .loginBtn {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+.joinSelect .joinBox_02 {
+    margin-top: 30px;
+}
+
+.joinSelect .joinBox_02 h3 {
+    width: 50%;
+    height: 35px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 4px;
+    margin: 0 auto;
+}
+
+.joinSelect .joinBox_02 button {
+    border: none;
+}
+
+.joinSelect .joinBox_02 #naverEnroll {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 10px auto 0 auto;
+    padding: 0px 15px;
+    background-color: rgb(3, 199, 90);
+    font-size: 17px;
+    width: 350px;
+    height: 45px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.joinSelect .joinBox_02 #kakaoEnroll {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 10px auto 0 auto;
+    padding: 0px 15px;
+    background-color: rgb(254, 229, 0);
+    font-size: 17px;
+    width: 350px;
+    height: 45px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+.joinSelect .joinBox_02 #naverEnroll .btnWrap_text,
+.joinSelect .joinBox_02 #kakaoEnroll .btnWrap_text {
+    width: 290px;
+    text-align: center; 
+    font-weight: 600;
+}
+
+/*
+==============================================
+회원가입 약관 페이지 CSS StyleSheet
+==============================================
+*/
+
+
+.enrollTemrs_title {
+    background-color: rgba(206, 206, 206, 0.362);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.enrollTemrs_title h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 4px;
+    margin: 0 auto 30px auto;
+}
+
+.enrollTemrs_title .StepTerms {
+    /* background-color: whitesmoke; */
+    width: 55%;
+    height: 80px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: bolder;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.enrollTemrs_title .StepTerms li {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.enrollTemrs_title .StepTerms li img.earthIcon {
+    width: 30px;
+    height: 30px;
+    transform: translateY(-2px);
+    margin-right: 10px;
+}
+
+.enrollTemrs_title .StepTerms li img.arrowIcon {
+    width: 70px;
+    height: 70px;
+    /* transform: translateX(-10px); */
+}
+
+.CheckTermBox {
+    width: 50%;
+    margin: 50px auto;
+    text-align: left;
+    display: flex;
+flex-direction: column;
+-webkit-box-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+align-items: center;
+}
+
+.CheckTermBox p.titleText {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.CheckTermBox .AllCheckBox {
+    width: 700px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: black;
+    margin: 5px 0 20px 0;
+}
+
+.CheckTermBox .AllCheckBox input {
+    transform: translateY(-2px);
+}
+
+.CheckTermBox .AllCheckBox .selectAllText {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.CheckTermBox .termTextBox {
+    border: 1px solid grey;
+    width: 700px;
+    height: 200px;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 10px;
+    overflow: hidden scroll;
+    padding-left: 15px;
+}
+
+#nextStep_enroll {
+    cursor: pointer;
+    width: 30%;
+    height: 50px;
+    color: white;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    text-decoration: none;
+    margin: 20px auto 0 auto;
+}
+
+/*
+==============================================
+회원가입 정보 입력 페이지 CSS StyleSheet
+서호정 - 작성 
+==============================================
+*/
+.enlollJE2 .enrollTemrs_title {
+    background-color: #CAE5FC;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.enlollJE2 .enrollTemrs_title h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 4px;
+    margin: 0 auto 30px auto;
+}
+
+.enlollJE2 .enrollTemrs_title .StepTerms {
+    width: 40%;
+    height: 80px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: bolder;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.enlollJE2 .enrollTemrs_title .StepTerms li {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    color: black;
+    font-size: 1.3rem;
+}
+
+
+.enlollJE2 .enrollTemrs_title .StepTerms li img.arrowIcon {
+    width: 70px;
+    height: 70px;
+}
+
+
+.enlollJE2 .second_tool {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.enlollJE2 .second_tool .st_head {
+    background-color:  #CAE5FC;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.enlollJE2 .second_tool .st_head2 {
+    background-color:  #CAE5FC;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.enlollJE2 .second_tool_1,
+.enlollJE2 .second_tool_2 {
+    margin-top: 50px;
+}
+
+.enlollJE2 .second_tool h4 {
+    padding: 10px 0 20px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.enlollJE2 .second_tool p {
+    padding: 0 0 5px 20px;
+    margin-top: -10px;
+    margin-bottom: -1px;
+    font-size: 15px;
+}
+
+
+.enlollJE2 .second_tool .st_input, .st_input2 {
+    box-sizing: border-box;
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    border: 1px solid #CAE5FC;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.enlollJE2 .second_tool .st_input input, .st_input2 input, #area {
+    border-radius: 5px;
+    border: 2px solid #CAE5FC;
+    height: 30px;
+}
+
+.enlollJE2 .second_tool label {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+
+.enlollJE2 .second_tool .second_tool_1 .st_input,
+.enlollJE2 .second_tool .second_tool_2 .st_input2 {
+    display: flex;
+    margin: 0 auto;
+}
+
+.enlollJE2 .second_tool .second_tool_2 .st_input2 {
+    height: 400px;
+}
+
+.enlollJE2 .second_tool .second_tool_1 .st_input .sti_label,
+.enlollJE2 .second_tool .second_tool_2 .st_input2 .sti2_label {
+    width: 20%;
+    display: block;
+    height: 200px;
+}
+
+.enlollJE2 .second_tool .second_tool_1 .st_input .sti_label div,
+.enlollJE2 .second_tool .second_tool_2 .st_input2 .sti2_label div {
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 25px;
+}
+
+.enlollJE2 .second_tool .second_tool_1 .st_input .sti_label .stl_pwd,
+.enlollJE2 .second_tool .second_tool_1 .st_input .sti_input .sti_pwd,
+.enlollJE2 .second_tool .second_tool_2 .st_input2 .sti2_label .stl_date,
+.enlollJE2 .second_tool .second_tool_2 .st_input2 .sti2_input .date_input,
+.enlollJE2 .second_tool .second_tool_2 .st_input2 .sti2_label .stl_phone,
+.enlollJE2 .second_tool .second_tool_2 .st_input2 .sti2_input .phoneNumber_input {
+    background-color: rgba(189, 189, 189, 0.205);
+}
+
+.enlollJE2 .second_tool .second_tool_2 .st_input2 .sti2_label .stl_gender {
+    background-color: rgba(189, 189, 189, 0.205);
+    border-bottom-left-radius: 20px;
+    margin-top: 2px;
+}
+.enlollJE2 .second_tool .second_tool_2 .st_input2 .sti2_input .gender_input {
+    background-color: rgba(189, 189, 189, 0.205);
+    border-bottom-right-radius: 20px;
+    margin-top: 2px;
+}
+
+.enlollJE2 .second_tool .second_tool_1 .st_input .sti_label span {
+    color: red;
+}
+
+.enlollJE2 .second_tool .second_tool_1 .st_input .sti_input,
+.enlollJE2 .second_tool .second_tool_2 .st_input2 .sti2_input {
+    width: 80%;
+    display: block;
+    height: 200px;
+}
+
+.enlollJE2 .second_tool .second_tool_1 .st_input .sti_input div,
+.enlollJE2 .second_tool .second_tool_2 .st_input2 .sti2_input div {
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 25px;
+}
+
+.enlollJE2 .second_tool .second_tool_2 .st_input2 .sti2_input .form-check-inline .form-check-input {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.enlollJE2 .second_tool .second_tool_1 .st_input .sti_input .sti_id #checkDuplicate {
+    margin-left: 30px;
+    width: 80px;
+    height: 34px;
+    background-color: rgb(72, 150, 252);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.enlollJE2 .second_tool .st_btn {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    justify-content: space-around;
+}
+
+.enlollJE2 .second_tool .st_btn .fisrt_stbtn {
+    width: 250px;
+    height: 34px;
+    height: 50px;
+    background-color: rgb(111, 112, 112);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.enlollJE2 .second_tool .st_btn .second_stbtn {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(72, 150, 252);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}

@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+/*
+==============================================
+마이페이지 페이지 관련 CSS StyleSheet
+==============================================
+*/
+
+
+.ploggingPerson {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.ploggingPerson .titleBox {
+    margin: 0 auto;
+    padding: 100px 0 20px 0;
+    background-color: rgb(217, 242, 237);
+}
+
+.ploggingPerson .titleBox h2 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+
+.ploggingPerson .menuBox {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.ploggingPerson .menuBox .menuList{
+    width: 20%;
+    display: inline-block;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.ploggingPerson .menuBox .menuList a {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-size: 1.3rem;
+}
+
+.ploggingPerson .menuBox .menuList span img {
+    width: 25px;
+    height: 25px;
+    transform: translate(-5px, -10%);
+}
+
+.ploggingPerson .personInfoBox_01 {
+    /* width: 70%; */
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.ploggingPerson .personInfoBox_01 .contentBox {
+    /* justify-content: space-evenly; */
+    /* flex-wrap: wrap; */
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.ploggingPerson .personInfoBox_01 .contentBox .profileImgBox {
+     /* width: 30%; */
+     /* position: relative;
+     padding: 0;
+     text-align: center; */
+     width: 50%;
+     text-align: center;
+     transform: translateX(20%);
+}
+
+.ploggingPerson .personInfoBox_01 .contentBox .profileImgBox div button {
+	margin-top: 10px;
+	text-decoration: none;
+    color: #ffffff;
+    font-size : 12px;
+    background-color: rgb(50, 157, 245);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(50, 157, 245);
+    -webkit-apperance : none;
+    -moz-appearance: none;
+    appearance : none;
+}
+
+.ploggingPerson .personInfoBox_01 .contentBox .profileImgBox div button:hover {
+	color: rgb(50, 157, 245);
+    background-color: #ffffff;
+    border: 1px solid rgb(50, 157, 245);
+}
+
+.ploggingPerson .personInfoBox_01 .contentBox .profileImgBox img {
+    width: 50%;
+	/* border: 1px solid; */
+}
+
+.ploggingPerson .personInfoBox_01 .contentBox .profileTextBox {
+	width: 50%;
+	margin-left : 5%;
+	text-align: left;
+     /* margin-top: 1.2rem;
+     position: relative; */
+}
+
+.ploggingPerson .personInfoBox_01 .contentBox .profileTextBox h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.ploggingPerson .personInfoBox_01 .contentBox .profileTextBox  p.crewInfo {
+	margin: 0;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.ploggingPerson .personInfoBox_01 .contentBox .profileTextBox  p.crewInfo img {
+	width: 15%;
+}
+
+.ploggingPerson .personInfoBox_01 .btnBox {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.ploggingPerson .personInfoBox_01 .btnBox button {
+	text-decoration: none;
+    color: #ffffff;
+    font-size : 16px;
+    background-color:rgb(50, 157, 245);
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(50, 157, 245);
+    -webkit-apperance : none;
+    -moz-appearance: none;
+    appearance : none;
+}
+
+/* .ploggingPerson .personInfoBox_01 .btnBox a:hover, */
+.ploggingPerson .personInfoBox_01 .btnBox button:hover {
+    color: rgb(50, 157, 245);
+    background-color: #ffffff;
+    border: 1px solid rgb(50, 157, 245);
+}
+
+/* 탈퇴 버튼  */
+.ploggingPerson .personInfoBox_01 .btnBox button#btnDelete {
+	background-color: tomato;
+	border: 1px solid tomato;
+}
+
+.ploggingPerson .personInfoBox_01 .btnBox button#btnDelete:hover {
+    color: tomato;
+    background-color: #ffffff;
+    border: 1px solid tomato;
+}
+
+
+/* .ploggingPerson .personInfoBox_01 .btnBox a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: green;
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 1px solid green;
+} */
+
+
+.ploggingPerson .personInfoBox_02 {
+    margin: 0 auto;
+    background-color: rgba(88, 170, 236, 0.362);
+    padding: 50px 0;
+}
+
+.ploggingPerson .personInfoBox_02 .mb-3 {
+	/* margin-bottom: 0 !important; */
+}
+
+.ploggingPerson .personInfoBox_02 .infoBox {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.ploggingPerson .personInfoBox_02 .infoBox label {
+	text-align: right;
+	border-right: 1px solid #1f1f1f;
+}
+
+
+/* 초반에 만들어둔 CSS 지금은 안 씀 */
+
+/* .ploggingPerson .personInfoBox_02 table {
+    margin: 0 auto;
+}
+
+.ploggingPerson .personInfoBox_02 table th {
+    padding:0 10px; 
+    width: 150px;
+    text-align: right;
+    border-right: 1px solid;
+}
+
+.ploggingPerson .personInfoBox_02 table td {
+    padding:0 10px; 
+    text-align:left;
+} */

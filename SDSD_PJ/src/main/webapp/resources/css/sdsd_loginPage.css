@@ -1,0 +1,338 @@
+/*
+==============================================
+로그인 페이지 CSS StyleSheet
+==============================================
+*/
+
+/*
+폰트 적용에 따른 input:password 텍스트 깨짐 현상 해결
+*/
+input[type=password]{
+	font-family: sans-serif !important;
+}
+input[type=password]::placeholder {
+	font-family: 'twayair';
+}
+
+
+.loginPage {
+text-align: center;
+margin: 80px 0;
+}
+
+.loginPage h2 {
+font-size: 1.8rem;
+font-weight: 800;
+text-decoration: underline;
+text-underline-position: under;
+text-decoration-thickness: 4px;
+margin: 0 auto 30px auto;
+}
+
+.loginBox {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.loginBox .inputBox {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.loginBox .inputBox input {
+    width: 350px;
+    height: 3rem;
+    padding: 1rem;
+    border: 1px solid gainsboro;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.loginPage button {
+    border: none;
+    background: transparent !important;
+}
+
+.loginBox #loginBtn .btnWrap_text {
+    /* background: black; */
+    background: linear-gradient(to right, #5bf16f, #06b0ff);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    width: 183px;
+    height: 3rem;
+    border: none;
+    color: #ffffff;
+    font-weight: 800;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.loginLinkBox {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.loginLinkBox a {
+    list-style: none;
+    margin: 0px 8px;
+    padding-right: 20px;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+
+.loginLinkBox .vLine {
+    list-style: none;
+    margin: 0px 8px;
+    padding-right: 20px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+.snsLoginBox {
+    margin-top: 20px;
+}
+.snsLoginBox h3 {
+    width: 50%;
+    height: 35px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 4px;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+.snsLoginBox button {
+        border: none;
+    }
+
+.snsLoginBox #naverLogin {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 10px auto 0 auto;
+    padding: 0px 15px;
+    background-color: rgb(3, 199, 90) !important;
+    font-size: 17px;
+    width: 350px;
+    height: 45px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.snsLoginBox #kakaoLogin {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 10px auto 0 auto;
+    padding: 0px 15px;
+    background-color: rgb(254, 229, 0) !important;
+    font-size: 17px;
+    width: 350px;
+    height: 45px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+.snsLoginBox #naverLogin .btnWrap_text,
+.snsLoginBox #kakaoLogin .btnWrap_text {
+    width: 290px;
+    text-align: center; 
+    font-weight: 600;
+}
+
+
+/*
+==============================================
+아이디 / 비밀번호 찾 CSS StyleSheet
+==============================================
+*/
+.findidpwd {
+    margin: 0 auto;
+    height: 800px;
+}
+
+
+.findidpwd .find {
+    width: 95%;
+    margin: 200px auto;
+    /* flex-direction: initial; */
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+
+
+.findidpwd .find .findHead,
+.findidpwd .find .findbody {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100px;
+    position: relative;
+}
+
+.findidpwd .find .findHead {
+    background-color: #CAE5FC;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.findidpwd .find .findHead h3 {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.findidpwd .find .findbody {
+    height: 400px;
+    box-sizing: border-box;
+    border: 1px solid #CAE5FC;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.findidpwd .find .findHead .fh_1,
+.findidpwd .find .findHead .fh_2 {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.findidpwd .find .findHead img {
+    padding-left: 10px;
+    width: 40px;
+}
+
+.findidpwd .find .findHead .fh_1,
+.findidpwd .find .findbody .findId1 {
+    border-right: 1px solid rgba(192, 192, 192, 0.356);
+}
+
+.findidpwd .find .findbody .findId1,
+.findidpwd .find .findbody .findPwd1 {
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+
+.findidpwd .find .findbody .findId1 .ficontent,
+.findidpwd .find .findbody .findPwd1 .ficontent2 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.findidpwd .find .findbody .findId1 .ficontent input,
+.findidpwd .find .findbody .findPwd1 .ficontent2 div,
+.findidpwd .find .findbody .findPwd1 .ficontent2 .fi_repwd .findPwd1_6 {
+    display: block;
+}
+
+.findidpwd .find .findbody .findId1 .ficontent input,
+.findidpwd .find .findbody .findPwd1 .ficontent2 .findPwd1_3,
+.findidpwd .find .findbody .findPwd1 .ficontent2 .findPwd1_5 {
+    width: 350px;
+    height: 50px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: 1px solid #CAE5FC;
+}
+
+.findidpwd .find .findbody .findPwd1 .ficontent2 .findPwd1_4 {
+	width: 330px;
+    height: 50px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: 1px solid #CAE5FC;
+}
+
+.findidpwd .find .findbody .findId1 .ficontent button,
+.findidpwd .find .findbody .findPwd1 .ficontent2 .findPwd1_6 {
+    width: 358px;
+    height: 50px;
+    border: none;
+    background-color: #60b5ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.findidpwd .find .findbody .findPwd1 .ficontent2 .findPwd1_4 {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.findidpwd .find .findbody .findPwd1 .ficontent2 .findPwd1_3,
+.findidpwd .find .findbody .findPwd1 .ficontent2 .findPwd1_5,
+.findidpwd .find .findbody .findPwd1 .ficontent2 .findPwd1_6{
+    width: 450px;
+}
+
+.findidpwd .find .findbody .findPwd1 .ficontent2 .fi_phone {
+    display: flex;
+}
+
+.findidpwd .find .findbody .findPwd1 .ficontent2 .fi_phone button {
+    width: 120px;
+    height: 50px;
+    border: none;
+    background-color: #60b5ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
